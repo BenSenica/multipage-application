@@ -1,0 +1,95 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#body3{
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header-right"
+        "sidebar logo ."
+        "sidebar video video"
+        "sidebar region ."
+        ". install .";
+}
+
+.header-left3 {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-left3 .blizzard-logo3 {
+    width: 70px;
+    height: 70px;
+    margin-left: 30px;
+}
+
+.games3, .social3, .shop3, .news3, .more3 {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.more3{
+    font-size: 30px;
+}
+
+.games3:hover, .social3:hover, .shop3:hover, .news3:hover{
+    text-shadow: 2px 2px 2px #fff;
+}
+
+.header-left3 .overwatch3 {
+    width: 75px;
+    height: 40px;
+}
+
+.header-right3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+select .profile3 {
+    
+}
+
+.bell3 {
+    width: 40px;
+    height: 40px;
+    padding-left: 5px;
+}
+
+.camera3 {
+    width: 40px;
+    height: 40px;
+    padding-left: 5px;
+}
+
+.friends3 {
+    width: 40px;
+    height: 40px;
+}
+
+.friends-online3 {
+    color: grey;
+}
+
+.header-right-table3 {
+    border-collapse: collapse;
+}
+.header-right-table3 td {
+    border: 1px solid grey;
+}
